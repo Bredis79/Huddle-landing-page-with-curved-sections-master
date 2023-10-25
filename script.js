@@ -36,8 +36,8 @@ submitBtn.addEventListener("click", function (event){
         newParagraph.style.marginTop = "-4rem"
     }
    
-    //form.reset()
-     alert(window.innerWidth)
+    form.reset()
+    
     })
    
 
