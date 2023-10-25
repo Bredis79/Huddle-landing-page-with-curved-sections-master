@@ -28,16 +28,17 @@ submitBtn.addEventListener("click", function (event){
         input.style.cursor = "pointer"
     } 
 
-    if(window.innerWidth > 1200) {
-        newParagraph.style.marginTop = "0rem"
+    // set margint-top of error message according to screen width    
+    if (window.innerWidth < 1201 || window.innerWidth > 481) {
+        newParagraph.style.marginTop = "-6rem"
     }
     
-    if(window.innerWidth < 1201 || window.innerWidth > 481) {
-        newParagraph.style.marginTop = "-6rem"
-    } 
-    
-    if(window.innerWidth <= 481) {
+    if (window.innerWidth < 482) {
         newParagraph.style.marginTop = "-4rem"
+    } 
+
+    if (window.innerWidth >= 1201) {
+        newParagraph.style.marginTop = "0rem"
     }
    
     form.reset()
